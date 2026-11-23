@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eunoia Natural · Pan de masa madre y granola artesanal</title>
+  <meta name="description" content="Eunoia Natural: pan de masa madre y granola artesanal elaborados con ingredientes naturales. Sabores naturales, energía real. Haz tu pedido.">
+  <meta name="theme-color" content="#5B6231">
+  <meta property="og:title" content="Eunoia Natural · Sabores naturales, energía real">
+  <meta property="og:description" content="Pan de masa madre y granola artesanal, hechos con ingredientes reales.">
+  <meta property="og:image" content="assets/images/pan-masa-madre.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Íconos reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 2.7 4.5 6.3 4.5c2.1 0 3.7 1.1 5.7 3.3 2-2.2 3.6-3.3 5.7-3.3 3.6 0 5.4 3.7 3.9 7.2C19.5 16.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-heart-fill" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 2.7 4.5 6.3 4.5c2.1 0 3.7 1.1 5.7 3.3 2-2.2 3.6-3.3 5.7-3.3 3.6 0 5.4 3.7 3.9 7.2C19.5 16.4 12 21 12 21z" fill="currentColor"/></symbol>
+  <symbol id="i-wheat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V9"/><path d="M12 9c-2.5 0-3.5-1.8-3.5-3.5C10.3 5.5 12 6.8 12 9z"/><path d="M12 9c2.5 0 3.5-1.8 3.5-3.5C13.7 5.5 12 6.8 12 9z"/><path d="M12 15c-2.5 0-3.5-1.8-3.5-3.5C10.3 11.5 12 12.800 12 15z"/><path d="M12 15c2.5 0 3.5-1.8 3.5-3.5C13.7 11.5 12 12.8 12 15z"/><path d="M12 5.500V2"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C4 11 10 4 20 4c0 10-6 16-14 16"/><path d="M4 20 14 10"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.500s-7-4.300-7-9.500a4 4 0 0 1 7-2.500 4 4 0 0 1 7 2.500c0 5.200-7 9.500-7 9.500z"/></symbol>
+  <symbol id="i-bread" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19a3 3 0 0 1-2-5.200C3 9 7 6 12 6s9 3 9 7.800A3 3 0 0 1 19 19z"/><path d="M9 10l1.500 2.500M13 9.500l1.500 3"/></symbol>
+  <symbol id="i-jar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8v3H8zM6.500 6h11A2 2 0 0 1 19 8v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V8a2 2 0 0 1 1.500-2z"/><path d="M5 11h14"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.800 7L3 20.500 4.500 15A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.500l4.500 4.500L19 7.500"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200c-1.500 0-3-.4-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.100-.7.300-.2.300-.9.900-.9 2.200s.9 2.500 1 2.700c.1.200 1.800 2.800 4.400 3.900 1.600.7 2.300.7 3.100.6.500-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.2-.2-.2-.5-.4z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.300" cy="6.700" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.500 21v-8h2.700l.5-3.200h-3.200V7.900c0-.9.400-1.700 1.800-1.700h1.500V3.400S15.500 3.200 14.300 3.200c-2.700 0-4.300 1.600-4.300 4.500v2.100H7.300V13H10v8z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.200 7-11.500a7 7 0 0 0-14 0C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></symbol>
+</svg>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="site-header" id="top">
+  <nav class="nav container" aria-label="Navegación principal">
+    <a class="brand" href="#inicio" aria-label="Eunoia Natural, ir al inicio">
+      <span class="brand-word" aria-hidden="true">E<span class="u">U</span>N<svg class="brand-heart"><use href="#i-heart"/></svg>IA</span>
+      <span class="brand-sub" aria-hidden="true">Natural</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+      <li><a href="#menu" class="nav-link">Menú</a></li>
+      <li><a href="#galeria" class="nav-link">Galería</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <li class="nav-cta"><a href="#menu" class="btn btn-sm btn-primary">Haz tu pedido</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="contenido">
+
+<!-- ============ INICIO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><svg class="ic"><use href="#i-wheat"/></svg> Pan artesanal · Granola artesanal</p>
+      <h1 class="reveal" style="--d:.08s">Eunoia <em>Natural</em></h1>
+      <p class="hero-script reveal" style="--d:.16s">Sabores naturales, energía real.</p>
+      <p class="hero-text reveal" style="--d:.24s">
+        Elaboramos pan de masa madre y granola artesanal con ingredientes naturales y procesos responsables,
+        pensados para nutrir tu cuerpo y tu bienestar. Cada hogaza cuenta una historia de dedicación, salud y comunidad.
+      </p>
+      <div class="hero-actions reveal" style="--d:.32s">
+        <a href="#menu" class="btn btn-primary">Ver menú <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a href="#contacto" class="btn btn-ghost">Contáctanos</a>
+      </div>
+      <ul class="hero-points reveal" style="--d:.4s">
+        <li><svg class="ic"><use href="#i-wheat"/></svg>Masa madre natural</li>
+        <li><svg class="ic"><use href="#i-leaf"/></svg>Ingredientes limpios</li>
+        <li><svg class="ic"><use href="#i-hand"/></svg>Hecho a mano con amor</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal" style="--d:.2s">
+      <div class="arch">
+        <img src="assets/images/pan-masa-madre.jpg" alt="Panes de masa madre recién horneados en un tazón" width="651" height="870" fetchpriority="high">
+      </div>
+      <img class="hero-badge" src="assets/images/logo-circulo.png" alt="Logotipo de Eunoia Natural" width="640" height="640">
+      <div class="hero-note"><svg class="ic"><use href="#i-heart-fill"/></svg> Corteza crujiente, corazón suave.</div>
+      <div class="hero-pill"><img src="assets/images/granola-bolsas.jpg" alt="Bolsas de granola artesanal en empaque kraft" width="1100" height="825" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span>Real</span><i></i><span>Natural</span><i></i><span>Consciente</span><i></i>
+    <span>Real</span><i></i><span>Natural</span><i></i><span>Consciente</span><i></i>
+    <span>Real</span><i></i><span>Natural</span><i></i><span>Consciente</span><i></i>
+    <span>Real</span><i></i><span>Natural</span><i></i><span>Consciente</span><i></i>
+  </div>
+</div>
+
+<!-- ============ NOSOTROS ============ -->
+<section class="section about" id="nosotros">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Nutrición que se siente, <span class="script">amor que se comparte</span></h2>
+      <div class="meander" aria-hidden="true"></div>
+    </header>
+
+    <div class="about-grid">
+      <div class="about-story reveal">
+        <h3>Quiénes somos</h3>
+        <p>
+          Eunoia Natural es un emprendimiento dedicado a la elaboración y comercialización de
+          <strong>pan de masa madre</strong> y <strong>granola artesanal</strong>, hechos con ingredientes naturales
+          y procesos responsables.
+        </p>
+        <h3>Nuestro origen</h3>
+        <p>
+          Nacimos con el propósito de ofrecer alternativas saludables a las personas, mediante una alimentación más
+          equilibrada y natural. Cada vez más gente busca productos nutritivos, hechos con ingredientes de calidad y con
+          menos procesamiento industrial, y quisimos responder a esa necesidad con alimentos artesanales y cercanos.
+        </p>
+        <p>
+          Hoy damos nuestros primeros pasos: producimos desde nuestros hogares, participamos en ferias de emprendedores
+          y atendemos cada pedido de forma directa, acompañando cada venta con información sobre los ingredientes y la
+          mejor manera de disfrutarlos.
+        </p>
+        <p class="care">
+          <svg class="ic"><use href="#i-heart"/></svg>
+          <span>Pensamos especialmente en personas en tratamiento oncológico y en quienes quieren alimentarse de forma
+          más consciente. Nuestros productos son alimentos complementarios: no sustituyen la indicación médica o
+          nutricional, y recomendamos consultar con el equipo tratante.</span>
+        </p>
+      </div>
+
+      <div class="about-photos reveal" style="--d:.12s">
+        <figure class="photo-a"><img src="assets/images/granola-horneada.jpg" alt="Granola artesanal recién horneada sobre la bandeja" loading="lazy" width="689" height="919"></figure>
+        <figure class="photo-b"><img src="assets/images/masa-formada.jpg" alt="Masa de pan formada y lista para hornear" loading="lazy" width="706" height="942"></figure>
+      </div>
+    </div>
+
+    <div class="mv-grid">
+      <article class="mv-card reveal">
+        <span class="mv-ic"><svg class="ic"><use href="#i-heart"/></svg></span>
+        <h3>Misión</h3>
+        <p>Somos una empresa dedicada a la elaboración de productos artesanales saludables, tales como pan de masa madre y granola artesanal, con ingredientes naturales y procesos responsables; con el objetivo de promover nutrición y bienestar a personas con tratamiento oncológico o aquellas que desean una alimentación sana, además de brindar un servicio orientado al consumo ideal del producto.</p>
+      </article>
+      <article class="mv-card mv-dark reveal" style="--d:.1s">
+        <span class="mv-ic"><svg class="ic"><use href="#i-wheat"/></svg></span>
+        <h3>Visión</h3>
+        <p>Ser la opción de alimentos artesanales saludables a nivel regional, contribuyendo al bienestar de personas con tratamientos oncológicos y a aquellas que desean alimentarse de manera consciente.</p>
+      </article>
+    </div>
+
+    <div class="values reveal">
+      <h3 class="center">Nuestros valores</h3>
+      <ul class="values-list">
+        <li><svg class="ic"><use href="#i-check"/></svg>Responsabilidad</li>
+        <li><svg class="ic"><use href="#i-wheat"/></svg>Innovación</li>
+        <li><svg class="ic"><use href="#i-hand"/></svg>Honestidad</li>
+        <li><svg class="ic"><use href="#i-leaf"/></svg>Sostenibilidad</li>
+        <li><svg class="ic"><use href="#i-heart"/></svg>Humanidad</li>
+      </ul>
+    </div>
+
+    <div class="pillars">
+      <h3 class="center reveal">Nuestra propuesta de valor</h3>
+      <div class="pillars-grid">
+        <article class="pillar reveal">
+          <svg class="ic"><use href="#i-bread"/></svg>
+          <h4>Elaboración artesanal</h4>
+          <p>Pan de masa madre y granola hechos de forma artesanal: una alternativa diferente a los productos industrializados.</p>
+        </article>
+        <article class="pillar reveal" style="--d:.1s">
+          <svg class="ic"><use href="#i-leaf"/></svg>
+          <h4>Ingredientes seleccionados</h4>
+          <p>Materias primas naturales y cuidadosamente elegidas, con control de calidad e higiene en cada etapa.</p>
+        </article>
+        <article class="pillar reveal" style="--d:.2s">
+          <svg class="ic"><use href="#i-chat"/></svg>
+          <h4>Información y cercanía</h4>
+          <p>Te contamos qué contiene cada producto y cómo aprovecharlo, con atención directa por redes sociales y pedidos personalizados.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="team reveal">
+      <h3 class="center">El equipo</h3>
+      <ul class="team-list">
+        <li><span class="avatar" aria-hidden="true">J</span><strong>Jeisel Navarro Robles</strong><small>Producción</small></li>
+        <li><span class="avatar" aria-hidden="true">A</span><strong>Astrid Robles Brenes</strong><small>Comercialización</small></li>
+        <li><span class="avatar" aria-hidden="true">J</span><strong>Joshua Romero Valverde</strong><small>Administración y Finanzas</small></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENÚ ============ -->
+<section class="section menu" id="menu">
+  <div class="menu-frame" aria-hidden="true"></div>
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow light">Menú artesanal</p>
+      <h2>Lo que horneamos <span class="script">para ti</span></h2>
+      <p class="lead">Precios en colones costarricenses. Haz tu pedido por WhatsApp o Instagram y coordinamos la entrega.</p>
+    </header>
+
+    <h3 class="menu-cat reveal"><span>Siempre disponibles</span></h3>
+    <div class="cards cards-2">
+      <article class="card product reveal" data-product="Pan de Masa Madre (1000 g)">
+        <div class="product-img"><img src="assets/images/pan-masa-madre.jpg" alt="Pan de masa madre de 1000 gramos" loading="lazy" width="651" height="870" style="object-position:50% 40%"></div>
+        <div class="product-body">
+          <div class="product-top">
+            <h4>Pan de Masa Madre</h4>
+            <span class="weight">1000 g</span>
+          </div>
+          <p class="desc">Fermentación natural, corteza crujiente y corazón suave. Se elabora con harina, harina integral, agua, sal y masa madre.</p>
+          <div class="product-foot">
+            <p class="price"><span class="cur">₡</span>3&nbsp;200</p>
+            <a class="btn btn-sm btn-primary order-btn" href="#contacto">Pedir <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product reveal" style="--d:.1s" data-product="Granola Artesanal (400 g)">
+        <div class="product-img"><img src="assets/images/granola-horneada.jpg" alt="Granola artesanal horneada con pasas y almendras" loading="lazy" width="689" height="919" style="object-position:50% 55%"></div>
+        <div class="product-body">
+          <div class="product-top">
+            <h4>Granola Artesanal</h4>
+            <span class="weight">400 g</span>
+          </div>
+          <p class="desc">Con avena, almendras, pasas, ciruelas pasas, aceite de coco, canela y miel pasteurizada. Se entrega en bolsa kraft.</p>
+          <div class="product-foot">
+            <p class="price"><span class="cur">₡</span>4&nbsp;000</p>
+            <a class="btn btn-sm btn-primary order-btn" href="#contacto">Pedir <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="menu-cat reveal"><span>Producción limitada</span></h3>
+    <div class="cards cards-2">
+      <article class="card product limited reveal" data-day="2" data-product="Pan de Masa Madre con Mantequilla">
+        <div class="product-img"><img class="round" src="assets/images/pan-mantequilla.jpg" alt="Pan de masa madre con mantequilla" loading="lazy" width="780" height="780"></div>
+        <div class="product-body">
+          <div class="product-top">
+            <h4>Pan de Masa Madre <small>con Mantequilla</small></h4>
+          </div>
+          <p class="day-badge"><svg class="ic"><use href="#i-wheat"/></svg> Solo los martes <span class="today" hidden>· ¡Hoy hay!</span></p>
+          <div class="product-foot">
+            <p class="price" data-price="precioPanMantequilla"><span class="pending">Precio por completar</span></p>
+            <a class="btn btn-sm btn-primary order-btn" href="#contacto">Pedir <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product limited reveal" style="--d:.1s" data-day="5" data-product="Pan de Masa Madre con Arándanos y Queso Crema">
+        <div class="product-img"><img class="round" src="assets/images/pan-horno.jpg" alt="Pan de masa madre con arándanos horneándose" loading="lazy" width="691" height="921" style="object-position:50% 60%"></div>
+        <div class="product-body">
+          <div class="product-top">
+            <h4>Pan de Masa Madre <small>con Arándanos y Queso Crema</small></h4>
+          </div>
+          <p class="day-badge"><svg class="ic"><use href="#i-wheat"/></svg> Solo los viernes <span class="today" hidden>· ¡Hoy hay!</span></p>
+          <div class="product-foot">
+            <p class="price" data-price="precioPanArandanosQuesoCrema"><span class="pending">Precio por completar</span></p>
+            <a class="btn btn-sm btn-primary order-btn" href="#contacto">Pedir <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="menu-notes reveal">
+      <ul>
+        <li><svg class="ic"><use href="#i-jar"/></svg><span>Empaque en bolsa de papel kraft, reutilizable.</span></li>
+        <li><svg class="ic"><use href="#i-leaf"/></svg><span>Contienen gluten y frutos secos (la granola lleva almendras).</span></li>
+        <li><svg class="ic"><use href="#i-heart"/></svg><span>Alimentos complementarios: no sustituyen la indicación médica o nutricional.</span></li>
+      </ul>
+    </div>
+
+    <div class="how reveal">
+      <h3 class="center">¿Cómo hacer tu pedido?</h3>
+      <ol class="how-list">
+        <li><span class="n">1</span><div><strong>Escríbenos</strong><p>Por WhatsApp o Instagram, dinos qué productos quieres.</p></div></li>
+        <li><span class="n">2</span><div><strong>Confirmamos</strong><p>Verificamos disponibilidad y coordinamos la entrega.</p></div></li>
+        <li><span class="n">3</span><div><strong>Paga y disfruta</strong><p>Pago por SINPE Móvil y recibe tu pedido.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="section gallery" id="galeria">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Galería</p>
+      <h2>Del horno <span class="script">a tu mesa</span></h2>
+      <p class="lead">Un vistazo a nuestro pan, nuestra granola y el proceso artesanal. Toca una foto para verla en grande.</p>
+    </header>
+
+    <div class="grid" id="galleryGrid">
+      <button class="g-item g-tall reveal" data-full="assets/images/pan-masa-madre.jpg" data-cap="Pan de masa madre recién horneado"><img src="assets/images/pan-masa-madre.jpg" alt="Panes de masa madre recién horneados" loading="lazy" width="651" height="870"><span class="g-cap">Pan de masa madre</span><span class="g-zoom"><svg class="ic"><use href="#i-expand"/></svg></span></button>
+      <button class="g-item reveal" style="--d:.05s" data-full="assets/images/granola-bolsas.jpg" data-cap="Granola artesanal en bolsas kraft"><img src="assets/images/granola-bolsas.jpg" alt="Bolsas de granola artesanal con etiqueta de Eunoia Natural" loading="lazy" width="1100" height="825"><span class="g-cap">Granola en bolsas kraft</span><span class="g-zoom"><svg class="ic"><use href="#i-expand"/></svg></span></button>
+      <button class="g-item g-tall reveal" style="--d:.05s" data-full="assets/images/granola-horneada.jpg" data-cap="Granola artesanal recién horneada"><img src="assets/images/granola-horneada.jpg" alt="Granola artesanal sobre la bandeja de horno" loading="lazy" width="689" height="919"><span class="g-cap">Granola recién horneada</span><span class="g-zoom"><svg class="ic"><use href="#i-expand"/></svg></span></button>
+      <button class="g-item reveal" style="--d:.1s" data-full="assets/images/pan-horno.jpg" data-cap="Pan de masa madre en el horno"><img src="assets/images/pan-horno.jpg" alt="Panes de masa madre horneándose" loading="lazy" width="691" height="921"><span class="g-cap">En el horno</span><span class="g-zoom"><svg class="ic"><use href="#i-expand"/></svg></span></button>
+      <button class="g-item reveal" style="--d:.15s" data-full="assets/images/masa-fermentando.jpg" data-cap="Masa en reposo, parte del proceso artesanal"><img src="assets/images/masa-fermentando.jpg" alt="Masa de pan en reposo dentro de un recipiente" loading="lazy" width="523" height="932"><span class="g-cap">Masa en reposo</span><span class="g-zoom"><svg class="ic"><use href="#i-expand"/></svg></span></button>
+      <button class="g-item reveal" style="--d:.05s" data-full="assets/images/masa-formada.jpg" data-cap="Masa formada, lista para hornear"><img src="assets/images/masa-formada.jpg" alt="Dos masas de pan formadas sobre una superficie enharinada" loading="lazy" width="706" height="942"><span class="g-cap">Listas para hornear</span><span class="g-zoom"><svg class="ic"><use href="#i-expand"/></svg></span></button>
+      <button class="g-item g-tall reveal" style="--d:.1s" data-full="assets/images/feria-palo-verde.jpg" data-cap="Feria de emprendedores · Palo Verde, El Guarco"><img src="assets/images/feria-palo-verde.jpg" alt="Afiche de la feria de emprendedores en Palo Verde, El Guarco" loading="lazy" width="750" height="896"><span class="g-cap">Ferias de emprendedores</span><span class="g-zoom"><svg class="ic"><use href="#i-expand"/></svg></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="section contact" id="contacto">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Contacto</p>
+      <h2>Haz tu pedido y <span class="script">lleva bienestar a tu mesa</span></h2>
+      <p class="lead">Escríbenos y respondemos tu pedido en menos de 24 horas.</p>
+    </header>
+
+    <div class="contact-grid">
+      <a class="c-card c-wa reveal" id="cWhatsapp" href="https://www.instagram.com/eunoia_natural_2?srtk=MTNnZWk5bGZsOXVmYw==" target="_blank" rel="noopener noreferrer">
+        <span class="c-ic"><svg class="ic"><use href="#i-whatsapp"/></svg></span>
+        <span class="c-label">WhatsApp</span>
+        <span class="c-value" data-fill="whatsapp-text">Número por completar</span>
+        <span class="c-go">Escribir por WhatsApp <svg class="ic"><use href="#i-arrow"/></svg></span>
+      </a>
+
+      <a class="c-card reveal" style="--d:.06s" id="cPhone" href="#contacto">
+        <span class="c-ic"><svg class="ic"><use href="#i-phone"/></svg></span>
+        <span class="c-label">Teléfono</span>
+        <span class="c-value" data-fill="telefono">Número por completar</span>
+        <span class="c-go">Llamar <svg class="ic"><use href="#i-arrow"/></svg></span>
+      </a>
+
+      <a class="c-card reveal" style="--d:.12s" id="cInstagram" href="https://www.instagram.com/eunoia_natural_2?srtk=MTNnZWk5bGZsOXVmYw==" target="_blank" rel="noopener noreferrer">
+        <span class="c-ic"><svg class="ic"><use href="#i-instagram"/></svg></span>
+        <span class="c-label">Instagram</span>
+        <span class="c-value" data-fill="instagram">@eunoia_natural_2</span>
+        <span class="c-go">Ver perfil <svg class="ic"><use href="#i-arrow"/></svg></span>
+      </a>
+
+      <a class="c-card reveal" style="--d:.18s" id="cFacebook" href="https://www.facebook.com/search/top?q=Eunoia%20Natural" target="_blank" rel="noopener noreferrer">
+        <span class="c-ic"><svg class="ic"><use href="#i-facebook"/></svg></span>
+        <span class="c-label">Facebook</span>
+        <span class="c-value" data-fill="facebook">Eunoia Natural</span>
+        <span class="c-go">Ver página <svg class="ic"><use href="#i-arrow"/></svg></span>
+      </a>
+
+      <a class="c-card reveal" style="--d:.24s" id="cMail" href="#contacto">
+        <span class="c-ic"><svg class="ic"><use href="#i-mail"/></svg></span>
+        <span class="c-label">Correo electrónico</span>
+        <span class="c-value" data-fill="correo">Correo por completar</span>
+        <span class="c-go">Escribir correo <svg class="ic"><use href="#i-arrow"/></svg></span>
+      </a>
+
+      <div class="c-card c-static reveal" style="--d:.3s" id="cLocation">
+        <span class="c-ic"><svg class="ic"><use href="#i-pin"/></svg></span>
+        <span class="c-label">Ubicación</span>
+        <span class="c-value" data-fill="ubicacion">Cartago, Costa Rica</span>
+        <span class="c-go c-note">Entregas coordinadas y participación en ferias de emprendedores.</span>
+      </div>
+    </div>
+
+    <p class="contact-thanks reveal">Gracias por apoyar lo natural y lo local. <svg class="ic"><use href="#i-heart-fill"/></svg></p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-meander" aria-hidden="true"></div>
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <img src="assets/images/logo-circulo.png" alt="Logotipo de Eunoia Natural" width="96" height="96" loading="lazy">
+      <p class="f-name">Eunoia <span>Natural</span></p>
+      <p class="f-tag">Sabores naturales, energía real.</p>
+      <p class="f-sub">Nutrición que se siente, amor que se comparte.</p>
+    </div>
+
+    <nav class="f-col" aria-label="Enlaces rápidos">
+      <h4>Enlaces rápidos</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="f-col">
+      <h4>Contacto</h4>
+      <ul class="f-contact">
+        <li><svg class="ic"><use href="#i-whatsapp"/></svg><span data-fill="whatsapp-text">WhatsApp por completar</span></li>
+        <li><svg class="ic"><use href="#i-mail"/></svg><span data-fill="correo">Correo por completar</span></li>
+        <li><svg class="ic"><use href="#i-pin"/></svg><span data-fill="ubicacion">Cartago, Costa Rica</span></li>
+      </ul>
+      <div class="f-social">
+        <a href="https://www.instagram.com/eunoia_natural_2?srtk=MTNnZWk5bGZsOXVmYw==" id="fInstagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Eunoia Natural"><svg class="ic"><use href="#i-instagram"/></svg></a>
+        <a href="https://www.facebook.com/search/top?q=Eunoia%20Natural" id="fFacebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Eunoia Natural"><svg class="ic"><use href="#i-facebook"/></svg></a>
+        <a href="https://www.instagram.com/eunoia_natural_2?srtk=MTNnZWk5bGZsOXVmYw==" id="fWhatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Eunoia Natural"><svg class="ic"><use href="#i-whatsapp"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year">2026</span> Eunoia Natural. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes" hidden>
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Cerrar">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Foto anterior">&#8249;</button>
+  <figure class="lb-fig">
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Foto siguiente">&#8250;</button>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
